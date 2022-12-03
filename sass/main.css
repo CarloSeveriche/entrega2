@@ -133,7 +133,7 @@ body {
   background: #F0F0F0;
   min-height: 48px;
 }
-.buscador__container .buscador__input input {
+.buscador__container .buscador__input input, .buscador__container .buscador__input main .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .buscador__container .buscador__input textarea {
   background: transparent;
   min-height: 48px;
   border: none;
@@ -229,28 +229,28 @@ body {
   opacity: 1;
   transform: scale(1);
 }
-.slider__container input[id="1"]:checked ~ .slider__images {
+.slider__container input[id="1"]:checked ~ .slider__images, .slider__container main .contacto .remitente .datos1 textarea[id="1"]:checked ~ .slider__images, main .contacto .remitente .datos1 .slider__container textarea[id="1"]:checked ~ .slider__images {
   -webkit-animation: none;
           animation: none;
   transform: translate3d(0, 0, 0);
 }
-.slider__container input[id="1"]:checked ~ .slider__selector .slider__selectorItem[for="1"] {
+.slider__container input[id="1"]:checked ~ .slider__selector .slider__selectorItem[for="1"], .slider__container main .contacto .remitente .datos1 textarea[id="1"]:checked ~ .slider__selector .slider__selectorItem[for="1"], main .contacto .remitente .datos1 .slider__container textarea[id="1"]:checked ~ .slider__selector .slider__selectorItem[for="1"] {
   background: #fff;
 }
-.slider__container input[id="2"]:checked ~ .slider__images {
+.slider__container input[id="2"]:checked ~ .slider__images, .slider__container main .contacto .remitente .datos1 textarea[id="2"]:checked ~ .slider__images, main .contacto .remitente .datos1 .slider__container textarea[id="2"]:checked ~ .slider__images {
   -webkit-animation: none;
           animation: none;
   transform: translate3d(-100%, 0, 0);
 }
-.slider__container input[id="2"]:checked ~ .slider__selector .slider__selectorItem[for="2"] {
+.slider__container input[id="2"]:checked ~ .slider__selector .slider__selectorItem[for="2"], .slider__container main .contacto .remitente .datos1 textarea[id="2"]:checked ~ .slider__selector .slider__selectorItem[for="2"], main .contacto .remitente .datos1 .slider__container textarea[id="2"]:checked ~ .slider__selector .slider__selectorItem[for="2"] {
   background: #fff;
 }
-.slider__container input[id="3"]:checked ~ .slider__images {
+.slider__container input[id="3"]:checked ~ .slider__images, .slider__container main .contacto .remitente .datos1 textarea[id="3"]:checked ~ .slider__images, main .contacto .remitente .datos1 .slider__container textarea[id="3"]:checked ~ .slider__images {
   -webkit-animation: none;
           animation: none;
   transform: translate3d(-200%, 0, 0);
 }
-.slider__container input[id="3"]:checked ~ .slider__selector .slider__selectorItem[for="3"] {
+.slider__container input[id="3"]:checked ~ .slider__selector .slider__selectorItem[for="3"], .slider__container main .contacto .remitente .datos1 textarea[id="3"]:checked ~ .slider__selector .slider__selectorItem[for="3"], main .contacto .remitente .datos1 .slider__container textarea[id="3"]:checked ~ .slider__selector .slider__selectorItem[for="3"] {
   background: #fff;
 }
 @-webkit-keyframes autoplay {
@@ -384,6 +384,10 @@ body {
 }
 
 /* FIN PAGINA INDEX. */
+.main__rastrear {
+  height: 100vh;
+}
+
 /* INICIO PAGINA RECOGER */
 .datosRecoger {
   width: 100%;
@@ -418,7 +422,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.datosRecoger .datos__container .datos input {
+.datosRecoger .datos__container .datos input, .datosRecoger .datos__container .datos main .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .datosRecoger .datos__container .datos textarea {
   -webkit-margin-before: 8px;
           margin-block-start: 8px;
   min-height: 40px;
@@ -447,4 +451,184 @@ body {
 }
 
 /* FIN PAGINA RECOGER */
-/* INICIO PAGINA *//*# sourceMappingURL=main.css.map */
+/* INICIO PAGINA COTIZAR */
+main {
+  width: 100%;
+  height: 100%;
+}
+main .cotizarEnvio {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px rgba(147, 147, 147, 0.4);
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  border-radius: 1rem;
+}
+main .cotizarEnvio .opcionEnvio__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.2);
+}
+main .cotizarEnvio .opcionEnvio__container .opcionEnvio__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 4px rgba(147, 147, 147, 0.4);
+}
+main .cotizarEnvio .cotizarEnvio__wraper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .cotizarEnvio__container {
+  width: 90%;
+  margin: 24px auto;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .cotizarEnvio__container .cotizarEnvio__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 24px;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .cotizarEnvio__container .cotizarEnvio__items .cotizarEnvio__item {
+  display: flex;
+  justify-content: start;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .cotizarEnvio__container .cotizarEnvio__items .cotizarEnvio__item div {
+  width: 100%;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .cotizarEnvio__container .cotizarEnvio__items .cotizarEnvio__item div input, main .cotizarEnvio .cotizarEnvio__wraper .cotizarEnvio__container .cotizarEnvio__items .cotizarEnvio__item div .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .cotizarEnvio__container .cotizarEnvio__items .cotizarEnvio__item div textarea {
+  width: 100%;
+  height: 40px;
+  margin: 16px 0 24px;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(147, 147, 147, 0.4);
+  padding-left: 16px;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .formaPago, main .cotizarEnvio .cotizarEnvio__wraper .calcular, main .cotizarEnvio .cotizarEnvio__wraper .declarar, main .cotizarEnvio .cotizarEnvio__wraper .valDeclara, main .cotizarEnvio .cotizarEnvio__wraper .peso {
+  width: 90%;
+  margin: 12px auto;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .formaPago__titulo {
+  -webkit-margin-after: 8px;
+          margin-block-end: 8px;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .formaPago input, main .cotizarEnvio .cotizarEnvio__wraper .formaPago .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .formaPago textarea, main .cotizarEnvio .cotizarEnvio__wraper .calcular input, main .cotizarEnvio .cotizarEnvio__wraper .calcular .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .calcular textarea, main .cotizarEnvio .cotizarEnvio__wraper .declarar input, main .cotizarEnvio .cotizarEnvio__wraper .declarar .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .declarar textarea, main .cotizarEnvio .cotizarEnvio__wraper .valDeclara input, main .cotizarEnvio .cotizarEnvio__wraper .valDeclara .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .valDeclara textarea, main .cotizarEnvio .cotizarEnvio__wraper .peso input, main .cotizarEnvio .cotizarEnvio__wraper .peso .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .peso textarea {
+  margin-right: 16px;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .peso__input, main .cotizarEnvio .cotizarEnvio__wraper .valDeclara__input {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 24px;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .peso__input input, main .cotizarEnvio .cotizarEnvio__wraper .peso__input .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .peso__input textarea, main .cotizarEnvio .cotizarEnvio__wraper .valDeclara__input input, main .cotizarEnvio .cotizarEnvio__wraper .valDeclara__input .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .valDeclara__input textarea {
+  -webkit-margin-before: 8px;
+          margin-block-start: 8px;
+  height: 40px;
+  padding-left: 16px;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .declarar {
+  display: flex;
+  gap: 16px;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .calcular {
+  display: flex;
+  flex-direction: column;
+  -webkit-margin-after: 24px;
+          margin-block-end: 24px;
+  gap: 16px;
+}
+main .cotizarEnvio .cotizarEnvio__wraper .calcular button, main .cotizarEnvio .cotizarEnvio__wraper .calcular input, main .cotizarEnvio .cotizarEnvio__wraper .calcular .contacto .remitente .datos1 textarea, main .contacto .remitente .datos1 .cotizarEnvio .cotizarEnvio__wraper .calcular textarea {
+  height: 40px;
+  max-width: 100px;
+}
+
+/* FIN PAGINA COTIZAR */
+/* INICIO PAGINA CONTACTO */
+main {
+  width: 100%;
+  height: 100%;
+  color: rgb(64, 64, 64);
+}
+main .contacto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 40px auto;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  box-shadow: 0px 0px 4px rgba(147, 147, 147, 0.4);
+  border-radius: 1rem;
+  padding: 24px;
+  gap: 40px;
+}
+main .contacto .remitente {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  gap: 24px;
+}
+main .contacto .remitente .datos1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+}
+main .contacto .remitente .datos1 input, main .contacto .remitente .datos1 textarea {
+  height: 40px;
+  -webkit-margin-before: 8px;
+          margin-block-start: 8px;
+  -webkit-margin-after: 24px;
+          margin-block-end: 24px;
+  box-shadow: 0px 0px 4px rgba(147, 147, 147, 0.4);
+  border: none;
+  border-radius: 0.5rem;
+}
+main .contacto .remitente .datos1 textarea {
+  height: 150px;
+}
+main .contacto .remitente button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(255, 158, 2);
+  border-radius: 0.5rem;
+}
+main .contacto .info {
+  height: 100%;
+  align-items: center;
+}
+main .contacto .info ul {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: baseline;
+  justify-content: center;
+  list-style: none;
+}
+main .contacto .info ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 24px;
+}
+main .contacto .info ul li img {
+  width: 60px;
+}/*# sourceMappingURL=main.css.map */

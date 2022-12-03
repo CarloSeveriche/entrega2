@@ -41,98 +41,98 @@
 
 
 
+<main>
+
+    <section class="cotizarEnvio">
 
 
-    <section class="section__opcionEnvio">
+        <div class="opcionEnvio__container">
 
-        <div class="opcionEnvio__documentos">
+            <div class="opcionEnvio__item">
 
-            <img class="opcionEnvio__icon" src="../img/iconoDocumenCotizar@2x.svg" alt="envio de documentos">
+                <img class="opcionEnvio__icon" src="../img/iconoDocumenCotizar@2x.svg" alt="envio de documentos">
 
-            <h3 class="tipoEnvio__text">Documentos</h3>
+                <h3 class="tipoEnvio__text">Documentos</h3>
+
+            </div>
+
+            <div class="opcionEnvio__item">
+
+                <img class="opcionEnvio__icon" src="../img/iconoPaquetesCotizar@2x.svg" alt="envio de documentos">
+
+                <h3 class="tipoEnvio__text">Paquetes</h3>
+
+            </div>
+
+         </div>
+
+
+
+        <div class="cotizarEnvio__wraper">
+
+            <div class="cotizarEnvio__container">
+                <div class="cotizarEnvio__items">
+                    <div class="cotizarEnvio__item">
+                        <div>
+                            <h3 class="cotizarEnvio__titulo">Lugar de origen</h3>
+                            <input type="text" id="origen" name="origen"placeholder="Ingrese ciudad de origen">
+                        </div>
+                    </div>
+                    
+                    <div class="cotizarEnvio__item">
+                        <div>
+                            <h3 class="cotizarEnvio__titulo">Lugar de destino</h3>
+                            <input type="text" id="destino" name="destino"placeholder="Ingrese ciudad de destino">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formaPago">
+                <h3 class="formaPago__titulo">Forma de pago</h3>
+
+                <label for="contado">Contado</label>
+                <input type="checkbox" name="contado" id="contado">
+
+                <label for="contraentrega">Contraentrega</label>
+                <input type="checkbox" name="contraentrega" id="contraentrega">
+            </div>
+
+            <div class="peso">
+                <h3 class="peso__titulo">Peso</h3>
+
+                <div class="peso__input">
+                    <input type="number" placeholder="Max 2 KL">
+                    <h3 class="peso__unidadMedida">KL</h3>
+                </div>
+            </div>
+
+            <div class="valDeclara">
+                <h3 class="valDeclara__titulo">Valor declarado</h3>
+
+                <div class="valDeclara__input">
+                    <input type="number" placeholder="Min 10.000">
+                </div>
+
+            </div>
+
+            <div class="declarar">
+                <p class="declarar__text">Declaro que la mercancia enviada <br> es mercancía  de <a href="/">transporte prohibido</a></p>
+
+                <input class="declarar__input" type="checkbox">
+            </div>
+
+            <div class="calcular">
+                <button class="calcular__button">Calcular</button>
+
+                <input class="calcular__precio"></input>
+            </div>
 
         </div>
 
-        <div class="opcionEnvio__paquetes">
-
-            <img class="opcionEnvio__icon" src="../img/iconoPaquetesCotizar@2x.svg" alt="envio de documentos">
-
-            <h3 class="tipoEnvio__text">Paquetes</h3>
-
-        </div>
-
-        
 
     </section>
-
-
-
-
-
-
-
-    <section class="section__cotizarEnvio">
-
-        <div class="cotizarEnvio__origenDestino">
-            <div class="cotizarEnvio__origen">
-                <div class="origen"></div>
-                <h3 class="origen__titulo">Lugar de origen</h3>
-                <input type="text" id="origen__input" class="origen__input" name="origen__input"placeholder="Ingrese ciudad de origen">
-            </div>
-            <div class="cotizarEnvio__destino">
-                <div class="destino"></div>
-                <h3 class="destino__titulo">Lugar de destino</h3>
-                <input type="text" id="destino__input" class="destino__input" name="destino__input" placeholder="Ingrese ciudad de destino">
-            </div>
-
-        </div>
-
-        <div class="formaPago">
-            <h3 class="origen__titulo">Lugar de origen</h3>
-
-            <label for="contado">Contado</label>
-            <input type="checkbox" name="contado" id="contado">
-
-            <label for="contraentrega">Contraentrega</label>
-            <input type="checkbox" name="contraentrega" id="contraentrega">
-        </div>
-
-        <div class="peso">
-            <h3 class="peso__titulo">Peso</h3>
-
-            <div class="peso__input">
-                <input type="number" placeholder="Max 2 KL">
-                <h3 class="peso__unidadMedida">KL</h3>
-            </div>
-
-        </div>
-
-        <div class="valDeclara">
-            <h3 class="valDeclara__titulo">Valor declarado</h3>
-
-            <div class="valDeclara__input">
-                <input type="number" placeholder="Min 10.000">
-            </div>
-
-        </div>
-
-        <div class="declarar">
-            <p class="declarar__text">Declaro que la mercancia enviada <br> es mercancía  de <a href="/">transporte prohibido</a></p>
-
-            <input class="declarar__input" type="checkbox">
-        </div>
-
-        <div class="calcular">
-            <button class="calcular__button">Calcular</button>
-
-            <input class="calcular__precio"></input>
-        </div>
-
-
-    </section>
-
-
-
+</main>
 
 
 

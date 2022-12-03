@@ -1,0 +1,418 @@
+@import"reset";
+@import"header";
+@import"footer";
+
+
+/* INICIO PAGINA INDEX */
+
+
+
+/* Buscador */
+
+
+.buscador__container{
+    margin: 0px auto ;
+    margin-block-start: 40PX;
+    min-width: 300px;
+    max-width: 500px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    .buscador__img{
+        background: $colorGris;
+        border-radius: 50px 0px 0px 50px;
+        height: 48px
+
+        
+    }
+
+
+    .buscador__input{
+        background: $colorGris;
+        min-height: 48px;
+
+        input{
+            background: transparent;
+            min-height: 48px; 
+            border: none;
+            width: 100%;
+        } 
+    }
+
+    .buscador__button{
+        height: 48px;
+        border: none;
+        background-color: $color2;
+        border-radius: 0px 50px 50px 0px;
+        font-size: 16px;
+        color: $colorNeutroClaro;
+        
+    }
+}
+
+
+
+
+
+
+/* Banner Carrousel */
+
+.slider__container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+
+    .slider{
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+      /*   border-radius: 1rem; */
+        overflow: hidden;
+        max-height: 500px;
+
+        img{
+    
+            max-width: 100%;
+        }
+    
+        .slider__images{
+            display: flex   ;
+            transform: translate3d(0, 0, 0);
+            transition: all 300ms;
+            animation-name: autoplay ;
+            animation-duration:  12s ;
+            animation-direction: alternate;
+            animation-fill-mode: forwards   ;
+            animation-iteration-count: infinite;
+
+            .slider__containerImg{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            flex-grow: 0;
+            max-width: 100%;
+            }
+        }
+
+        .slider__selector{
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            display: flex   ;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .slider__selectorItem{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 2px $colorNeutroClaro solid;
+                width: 1em;
+                height: 1em;
+                border-radius: 0.2rem;
+                overflow: hidden;
+                cursor: pointer;
+                background: $colorClaroOpacidad;
+                margin: 0 8px;
+                text-align: center;
+                transition: all 300ms;
+            }
+
+            .slider__selectorItem:hover{
+                transform: scale(2);
+            }
+
+            .slider__selector img{
+                display: inline-block;
+                max-width: none;
+                height: 100%;
+                transform: scale(1);
+                opacity: 0;
+                transition: all 300ms;
+            }
+
+            .slider__selector img:hover{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+
+    }
+
+    input[id="1"]:checked ~ .slider__images{
+        animation: none;
+        transform: translate3d(0, 0, 0);
+    }
+    
+    input[id="1"]:checked ~  .slider__selector .slider__selectorItem[for="1"]{
+        background: $colorNeutroClaro;
+    }
+    
+    
+    input[id="2"]:checked ~ .slider__images{
+        animation: none;
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    input[id="2"]:checked ~  .slider__selector .slider__selectorItem[for="2"]{
+        background: $colorNeutroClaro;
+    }
+    
+    input[id="3"]:checked ~ .slider__images{
+        animation: none;
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+    
+    input[id="3"]:checked ~  .slider__selector .slider__selectorItem[for="3"]{
+        background:$colorNeutroClaro;
+    }
+    
+    
+    @keyframes autoplay{
+        0%{
+            transform: translate3d(calc(-100% * 0), 0, 0);
+            
+        }
+        30%{
+            transform: translate3d(calc(-100% * 0), 0, 0);
+        }
+    
+        33%{
+            transform: translate3d(calc(-100% * 1), 0, 0);
+        }
+        63%{
+            transform: translate3d(calc(-100% * 1), 0, 0);
+        }
+    
+        66%{
+            transform: translate3d(calc(-100% * 2), 0, 0);
+        }
+    
+        100%{
+            transform: translate3d(calc(-100% * 2), 0, 0);
+        }
+    }
+    
+
+}
+
+
+/* CARDS */
+
+
+.cards{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(328px , 1fr));
+    padding: 40px 0px;
+    gap:2em;
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__container{ 
+            width: 100%;
+            height: 100%;
+            border-radius: 1em;
+            overflow: hidden;
+            background-size:cover;
+            background-position: center bottom;
+            
+    
+        }
+
+        .container1{
+            background-image: $img1BackG;
+        }
+        
+        .container2{
+            background-image: $img2BackG; 
+        }
+        
+        .container3{
+            background-image: $img3BackG; 
+        }
+
+        .card__content{
+            width: 100%;
+            padding-bottom: 2.5em;
+            border-radius: 1em;
+            box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+            display: flex;
+            flex-direction: column;
+            color: $colorNeutroClaro;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+            background: $colorDrgradadoBackG;
+            
+
+            .card__botton{
+                margin-inline-start: 1em;
+                background-color: $color2;
+                color: $colorNeutroClaro;
+                text-decoration: none;
+                padding: 1em 3em;
+                width: auto;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: auto;
+                border-radius: 0.5em;
+            }
+            
+            .card__icon{
+                 height: 50px;
+                 margin: 16px 0;
+            }
+
+            .card__texts{
+
+                padding: 16px;
+
+            }
+        
+            
+        }
+        
+    } 
+
+}
+
+
+
+/* Banner2 */
+
+
+.banner2{
+    
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    background: $color1;
+    color: $colorText;
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .banner__text{
+        max-width: 90%;
+        align-self: center;
+        margin-inline-start: 10%;
+        margin-inline-end: 15%;
+    
+    }
+   
+ }
+
+/* FIN PAGINA INDEX. */
+
+
+
+
+
+
+
+/* INICIO PAGINA RECOGER */
+
+.datosRecoger{
+    width: 100%;
+    margin: 40px 0px;
+    justify-items: center;
+
+    &__titulo{
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+        box-shadow: 3px 3px 4px rgba(147, 147, 147, 0.4);
+        background: $color1; 
+        color: $colorNeutroClaro;
+        font-size: 1.5em;
+        padding-left: 16px;
+    }
+    
+    .datos__container{
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: 3px 3px 4px rgba(147, 147, 147, 0.4);
+        background: $colorGris; 
+
+        .datos{
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(280px , auto));
+            padding: 24px 0px;
+            gap: 0px 200px;
+
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                margin-block-start: 8px;
+                min-height: 40px;
+                max-height: 40px;
+                border-radius: .2rem;
+                border: none;
+                max-width: 100%;
+            }
+
+            label{
+                width: 100% ;
+                margin-inline-end: 32px;
+            }
+
+        }
+        
+        .datos__tipoPago{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 90%;
+
+            div{
+                margin: 8px;
+            }
+
+            label{
+                display: inline-block;
+                width: 160px;  
+            }
+            
+            
+        }
+    }
+
+    
+}
+
+/* FIN PAGINA RECOGER */
+
+
+
+
+/* INICIO PAGINA */
+
+
+
+
+

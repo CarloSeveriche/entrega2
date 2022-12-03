@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../sass/main.css">
 </head>
 <body>
     
@@ -35,21 +35,14 @@
     </nav>
 
 
-
-    <section class="section__buscador">
-
-        <h1 class="buscador__h1">Rastrea tu paquete</h1>
-        <form autocomplete="off" action="">
-            
-            <div class="section__numeroGuia">
-                <input class ="div__numeroGuia" type="text" name="numeroGuia" placeholder="Ingresa el número de guia">
-                <img class="lupa" src="../img/Group@2x.svg" alt="lupa">
-            </div>
-        </form>
-
-        <a  href=""><button class="section__button">Buscar</button></a>
-
-    </section>
+    
+  <!-- Buscador -->
+  <section class="buscador__container">
+    <div class="buscador__img"><img src="../img/Group@2x.svg" alt="" class="buscador__icono"></div>
+    <div class="buscador__input">
+        <label for="guia"></label><input type="text" id="guia" name="guia" placeholder="Ingresa el número de  tu guia"></div>
+    <button class="buscador__button">Buscar</button>
+</section>
 
 
 

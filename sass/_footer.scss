@@ -1,0 +1,38 @@
+
+.footer{
+    width: 100%;
+    display: grid;
+    max-height: auto;
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+
+    gap:24px;
+    background-color: #ddf9fb;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+    margin-block-start: 40px;
+    
+    .logo__img{
+        max-width: 120px;
+        height: auto;
+        
+    }
+
+    .infoContact__list {
+    
+        li{
+        font-size: 1em;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Roboto', sans-serif;
+        color: #313131;
+        }
+
+        img{
+   
+            width: 24px;
+            margin: 0px 16px ;
+            align-content: center;
+        }
+    }
+}

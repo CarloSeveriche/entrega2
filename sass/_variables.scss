@@ -16,3 +16,11 @@ $img3BackG:url("../img/pexels-sheila-731217.jpg");
 
 $font1: "Poppins", sans-serif;
 
+@mixin parrafos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-block-end: 24px;
+}
